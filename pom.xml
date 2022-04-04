@@ -9,7 +9,7 @@
     <name>javaseleniumtemplate</name>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>17.0.2</java.version>
     </properties>
     <dependencies>
         <dependency>

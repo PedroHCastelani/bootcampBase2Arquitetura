@@ -26,8 +26,7 @@ public class PageBase {
         StopWatch timeOut = new StopWatch();
         timeOut.start();
 
-        while (timeOut.getTime() <= GlobalParameters.TIMEOUT_DEFAULT)
-        {
+        while (timeOut.getTime() <= GlobalParameters.TIMEOUT_DEFAULT) {
             String documentState = javaScriptExecutor.executeScript("return document.readyState").toString();
             if (documentState.equals("complete")){
                 timeOut.stop();

@@ -1,16 +1,18 @@
 package com.javaseleniumtemplate.bases;
 
 import com.javaseleniumtemplate.GlobalParameters;
+import com.javaseleniumtemplate.flows.LoginFlows;
+import com.javaseleniumtemplate.pages.ReportarBugPage;
 import com.javaseleniumtemplate.utils.DriverUtils;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
+import org.junit.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 //import org.testng.ITestResult;
 //import org.testng.annotations.*;
 
 
 public class TestBase {
+
     @BeforeClass
     public static void beforeSuite(){
         new GlobalParameters();

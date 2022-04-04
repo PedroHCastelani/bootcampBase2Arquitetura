@@ -4,12 +4,14 @@ import com.javaseleniumtemplate.bases.PageBase;
 import org.openqa.selenium.By;
 
 public class LoginPage extends PageBase {
+
+
     //Mapping
-    By usernameField = By.id("login");
-    By passwordField = By.id("password");
-    By loginButton = By.xpath("//button[@type='submit']");
-    By cookieButton = By.xpath("//*[@aria-label='dismiss cookie message']");
-    By errorMessageLabel = By.className("login-error");
+    By usernameField = By.xpath("//input[@name='username']");
+    By passwordField = By.xpath("//input[@name='password']");
+    By loginButton = By.className("button");
+    By errorMessageLabel = By.tagName("font");
+    By loginComSucesso = By.xpath("//span[@class=\"italic\"]");
 
     //Actions
     public void preenhcerUsuario(String usuario){
@@ -24,11 +26,11 @@ public class LoginPage extends PageBase {
         click(loginButton);
     }
 
-    public void clicarEmAceitarCookies(){
-        click(cookieButton);
-    }
-
     public String retornaMensagemErroLogin(){
         return getText(errorMessageLabel);
+    }
+
+    public String retornaLoginComSucesso(){
+        return getText(loginComSucesso);
     }
 }

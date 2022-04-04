@@ -7,10 +7,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverUtils {
 
-    public static WebDriver INSTANCE = null;
+        public static WebDriver INSTANCE = null;
     private static String downloadPath = GlobalParameters.DOWNLOAD_DEFAULT_PATH;
 
     public static void createInstance(){
+
+
+
         String browser = GlobalParameters.BROWSER_DEFAULT;
         String execution = GlobalParameters.EXECUTION;
 

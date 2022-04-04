@@ -12,6 +12,7 @@ public class GlobalParameters {
     public static int TIMEOUT_DEFAULT;
     public static String URL_DEFAULT;
     public static String DOWNLOAD_DEFAULT_PATH;
+    public static String USUARIO_GERAL;
     public static String SENHA_GERAL;
 
     private Properties properties;
@@ -33,7 +34,8 @@ public class GlobalParameters {
         EXECUTION = properties.getProperty("execution");
         TIMEOUT_DEFAULT = Integer.parseInt(properties.getProperty("timeout.default"));
         URL_DEFAULT = properties.getProperty("url.default");
-        DOWNLOAD_DEFAULT_PATH = properties.getProperty("download.defaul.path");
+        DOWNLOAD_DEFAULT_PATH = properties.getProperty("download.default.path");
+        USUARIO_GERAL = properties.getProperty("usuarioGeral");
         SENHA_GERAL = properties.getProperty("senhaGeral");
     }
 }
