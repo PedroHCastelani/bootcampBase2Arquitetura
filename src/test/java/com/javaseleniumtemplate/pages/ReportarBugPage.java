@@ -24,7 +24,7 @@ public class ReportarBugPage extends PageBase {
     }
 
     public void newCategoria(){
-        comboBoxSelectByVisibleText(newCategoria, "[Todos os Projetos] Pedro Castelani");
+        comboBoxSelectByVisibleText(newCategoria, "[Todos os Projetos] Test Pedro");
     }
 
     public void preencherResumo(String resumo){
